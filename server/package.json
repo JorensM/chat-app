@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "dev": "nodemon ./src/server.ts"
+    "dev": "nodemon ./src/server.ts",
+    "start": "cd ../common && tsc -b && cd ../server && tsc && node ./dist/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",

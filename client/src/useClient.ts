@@ -10,11 +10,6 @@ const SERVER_URL = import.meta.env.VITE_PUBLIC_SERVER_URL || 'http://localhost:4
 
 const socket = io(SERVER_URL);
 
-const user: User = {
-    id: 1,
-    username: 'Jorens'
-}
-
 type Message = IOData & { text: string };
 
 export default function useClient() {
